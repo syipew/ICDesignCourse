@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuLogin">
+
+    <ImageView
+        android:id="@+id/gambarLogin"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:contentDescription="Ilustrasi"
+        android:src="@drawable/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewWaveTop" />
+
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail"
+        android:textColor="#000000"
+        android:fontFamily="@font/poppins"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/gambarLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="32dp" />
+
+    <EditText
+        android:id="@+id/isiEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/kotak_login"
+        android:backgroundTint="#A566FF"
+        android:fontFamily="@font/poppins"
+        android:hint="icdesign@gmail.com"
+        android:textColorHint="#FFFFFF"
+        android:inputType="textEmailAddress"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Email" />
+
+    <!-- Label Kata Sandi -->
+    <TextView
+        android:id="@+id/Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kata Sandi"
+        android:textColor="#000000"
+        android:fontFamily="@font/poppins"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/isiEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp" />
+
+    <EditText
+        android:id="@+id/isiPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:hint="Kata Sandi"
+        android:backgroundTint="#A566FF"
+        android:fontFamily="@font/poppins"
+        android:textSize="14sp"
+        android:background="@drawable/kotak_login"
+        android:textColorHint="@color/white"
+        android:paddingStart="16dp"
+        android:paddingEnd="24dp"
+        android:inputType="textPassword"
+        android:drawableRight="@drawable/baseline_visibility_off_24"
+        app:layout_constraintTop_toBottomOf="@id/Password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp" />
+
+    <Button
+        android:id="@+id/btnMasuk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#A566FF"
+        android:fontFamily="@font/poppins"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Masuk"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/isiPassword" />
+
+    <TextView
+        android:id="@+id/txtAtau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atau"
+        android:fontFamily="@font/poppins"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/btnMasuk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#A566FF"
+        android:fontFamily="@font/poppins"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Akun Google"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtAtau" />
+
+    <TextView
+        android:id="@+id/txtLupa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Belum Punya Akun ?"
+        android:fontFamily="@font/poppins"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/btnLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center" />
+
+    <ImageView
+        android:id="@+id/imageViewWaveTop"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/banner1"
+        tools:layout_editor_absoluteX="151dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageViewWafeBottom"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLupa"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/banner2"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
