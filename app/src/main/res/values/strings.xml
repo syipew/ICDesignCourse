@@ -6,7 +6,7 @@
     <string name="judul_ic_design">Judul Ic Design</string>
     <string name="icdesign">Icdesign</string>
     <string name="daftar">Daftar</string>
-    <string name="masuk">Masuk !</string>
+    <string name="masuk1">Masuk !</string>
     <string name="logo_ic_design">logo_ic_design</string>
     <string name="icdesign_gmail_com">icdesign@gmail.com</string>
     <string name="e_mail">E-Mail</string>
@@ -16,4 +16,9 @@
     <string name="akun_google">Akun Google</string>
     <string name="belum_punya_akun">Belum Punya Akun ?</string>
     <string name="sudah_punya_akun">Sudah Punya Akun ?</string>
+    <string name="ombaktop">ombakTop</string>
+    <string name="ombakbottom">ombakBottom</string>
+    <string name="masuk">Masuk</string>
+    <string name="daftar_sekarang">Daftar Sekarang !</string>
+    <string name="lupa_password">Lupa Password ?</string>
 </resources>
