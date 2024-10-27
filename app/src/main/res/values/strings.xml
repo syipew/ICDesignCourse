@@ -4,9 +4,9 @@
     <string name="text_belajar_desain">Belajar Desain dengan Lebih Mudah dan Menyenangkan bersama KIW Design</string>
     <string name="belajar_design_desctiption">belajar design desctiption</string>
     <string name="judul_ic_design">Judul Ic Design</string>
-    <string name="icdesign">ICDesign</string>
+    <string name="icdesign">Icdesign</string>
     <string name="daftar">Daftar</string>
-    <string name="masuk">Masuk</string>
+    <string name="masuk">Masuk !</string>
     <string name="logo_ic_design">logo_ic_design</string>
     <string name="icdesign_gmail_com">icdesign@gmail.com</string>
     <string name="e_mail">E-Mail</string>
@@ -15,4 +15,5 @@
     <string name="atau">Atau</string>
     <string name="akun_google">Akun Google</string>
     <string name="belum_punya_akun">Belum Punya Akun ?</string>
+    <string name="sudah_punya_akun">Sudah Punya Akun ?</string>
 </resources>
