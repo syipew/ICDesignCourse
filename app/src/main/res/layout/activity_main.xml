@@ -82,7 +82,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnMasukMain"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/ungu_muda"
