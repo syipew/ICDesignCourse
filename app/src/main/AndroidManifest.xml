@@ -23,6 +23,9 @@
             android:name=".MenuLogin"
             android:exported="false" />
         <activity
+            android:name=".RoleProfile_Activity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
