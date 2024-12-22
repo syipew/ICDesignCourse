@@ -1,206 +1,249 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
+    android:id="@+id/main"
     android:layout_height="match_parent"
     tools:context=".RoleProfile_Activity">
 
-    <ImageView
-        android:id="@+id/banner1"
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Lengkapi Profilmu Dulu Yuk!"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textUsername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="24dp"
+        android:text="Username"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editUsername"
         android:layout_width="match_parent"
-        android:layout_height="147dp"
-        android:contentDescription="@string/nologin"
-               main
-        app:srcCompat="@drawable/banner1"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-18dp" />
-
-    <TextView
-        android:id="@+id/title_text"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="37dp"
-        android:text="Lengkapi Profilmu Dulu Yuk !"
-        android:text="@string/lengkapi_profil"
-              main
-        android:textColor="#2F2E41"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rectangle_ungu"
         android:fontFamily="@font/poppins"
-        android:textSize="24sp"
-        android:textStyle="bold"
+        android:hint="@string/icdesign"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:textColorHint="@color/white"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/banner1" />
+        app:layout_constraintTop_toBottomOf="@+id/textUsername" />
 
     <TextView
-        android:id="@+id/role_prompt"
-        android:layout_width="wrap_content"
+        android:id="@+id/textEmail"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Role mu sebagai apa ?"
-        android:text="@string/role_mu" 
-        main
-        android:textColor="#2F2E41"
-        android:fontFamily="@font/poppins"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/title_text" />
-
-    <TextView
-        android:id="@+id/mentor_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Mentor"
-        android:text="@string/mentor"
-              main
-        android:textColor="#2F2E41"
-        android:textSize="12sp"
-        android:fontFamily="@font/poppins"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@id/mentor_icon"
-        app:layout_constraintStart_toStartOf="@id/mentor_icon"
-        app:layout_constraintTop_toBottomOf="@id/role_prompt" />
-
-    <ImageView
-        android:id="@+id/mentor_icon"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="8dp"
-        android:contentDescription="Mentor"
-               main
-        android:src="@drawable/women"
-        app:layout_constraintEnd_toStartOf="@id/student_icon"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/mentor_text" />
-
-    <TextView
-        android:id="@+id/student_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Student"
-        android:text="@string/student"
-              main
-        android:fontFamily="@font/poppins"
-        android:textColor="#2F2E41"
-        android:textSize="12sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@id/student_icon"
-        app:layout_constraintStart_toStartOf="@id/student_icon"
-        app:layout_constraintTop_toBottomOf="@id/role_prompt" />
-
-    <ImageView
-        android:id="@+id/student_icon"
-        android:layout_width="75dp"
-        android:layout_height="75dp"
         android:layout_marginTop="10dp"
-        android:src="@drawable/women"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/mentor_icon"
-        app:layout_constraintTop_toBottomOf="@id/student_text" />
+        android:layout_marginHorizontal="24dp"
+        android:text="E-mail"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/editUsername"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <TextView
-        android:id="@+id/class_prompt"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Mau belajar di kelas apa ?"
-        android:text="@string/nanya_kelas"
-              main
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rectangle_ungu"
         android:fontFamily="@font/poppins"
-        android:textColor="#2F2E41"
-        android:textSize="16sp"
-        android:textStyle="bold"
+        android:hint="icdesign@gmail.com"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:textColorHint="@color/white"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/student_icon" />
+        app:layout_constraintTop_toBottomOf="@+id/textEmail" />
 
     <TextView
-        android:id="@+id/graphic_design_text"
-        android:layout_width="wrap_content"
+        android:id="@+id/textFullname"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="Desain Grafis"
-        android:text="@string/desain_grafis"
-              main
-        android:textColor="#2F2E41"
-        android:fontFamily="@font/poppins"
-        android:textSize="12sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@id/graphic_design_icon"
-        app:layout_constraintStart_toStartOf="@id/graphic_design_icon"
-        app:layout_constraintTop_toBottomOf="@id/class_prompt" />
-
-    <ImageView
-        android:id="@+id/graphic_design_icon"
-        android:layout_width="130dp"
-        android:layout_height="100dp"
-        android:layout_marginEnd="8dp"
-        android:src="@drawable/grafis"
-        app:layout_constraintEnd_toStartOf="@id/uiux_icon"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="24dp"
+        android:text="Nama Lengkap"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/editEmail"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/graphic_design_text" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editFullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rectangle_ungu"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/icdesign"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:textColorHint="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFullname" />
 
     <TextView
-        android:id="@+id/uiux_text"
-        android:layout_width="wrap_content"
+        android:id="@+id/textPassword"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="Desain UI/UX"
-        android:text="@string/dsn_ui_ux"
-              main
-        android:textColor="#2F2E41"
-        android:fontFamily="@font/poppins"
-        android:textStyle="bold"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="@id/uiux_icon"
-        app:layout_constraintStart_toStartOf="@id/uiux_icon"
-        app:layout_constraintTop_toBottomOf="@id/class_prompt" />
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="24dp"
+        android:text="Kata Sandi"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/editFullname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <ImageView
-        android:id="@+id/uiux_icon"
-        android:layout_width="130dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="8dp"
-        android:src="@drawable/uiux"
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rectangle_ungu"
+        android:fontFamily="@font/poppins"
+        android:hint="Kata Sandi"
+        android:drawableRight="@drawable/baseline_visibility_off_24"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:textColorHint="@color/white"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/graphic_design_icon"
-        app:layout_constraintTop_toBottomOf="@id/uiux_text" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPassword" />
+
+    <TextView
+        android:id="@+id/textLevel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="24dp"
+        android:text="Level"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/editPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rectangle_ungu"
+        android:fontFamily="@font/poppins"
+        android:hint="level"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:textColorHint="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLevel" />
+
+    <TextView
+        android:id="@+id/textProfil"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="24dp"
+        android:text="Foto Profil"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/editLevel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editProfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rectangle_ungu"
+        android:fontFamily="@font/poppins"
+        android:hint="Choose file"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:textColorHint="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textProfil" />
 
     <Button
-        android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="13dp"
-        android:paddingBottom="13dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="40dp"
+        android:fontFamily="@font/poppins"
         android:backgroundTint="@color/ungu_muda"
-        android:fontFamily="@font/poppins_bold"
-        android:hint="@string/Lanjut"
-        android:hint="@string/lanjut"
-            main
-        android:textColorHint="@color/white"
-        android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Simpan"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:textColorHint="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent "
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/uiux_icon" />
-
-    <ImageView
-        android:id="@+id/banner2"
-        android:layout_width="match_parent"
-        android:layout_height="113dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/banner2"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintTop_toBottomOf="@id/editProfil" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
